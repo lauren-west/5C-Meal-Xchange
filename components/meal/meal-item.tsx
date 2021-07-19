@@ -17,7 +17,7 @@ export default class MealItem extends React.Component<{}> {
     return (
         <View>
             <MealTitle title="Hamburger" />
-            <MealIcon description="rocket"/>
+            <MealIcon description="check-square"/>
             <MealDescription description="Hamburger contain meat yum!" />
             <MealWrittenReview/>
             {/* <Button text="Submit Review" onPress={} color="#846434"></Button> */}
@@ -27,3 +27,5 @@ export default class MealItem extends React.Component<{}> {
     );
   }
 }
+
+// <MealIcon description="coffee"/>
