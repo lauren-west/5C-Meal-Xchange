@@ -1,7 +1,7 @@
 import React from "react";
 
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Image } from "react-native";
 // import Button from "./button";
 import MealDescription from "./meal-description";
 import MealIcon from "./meal-icon";
@@ -21,7 +21,8 @@ export default class MealItem extends React.Component<{}> {
             <MealDescription description="Hamburger contain meat yum!" />
             <MealWrittenReview/>
             {/* <Button text="Submit Review" onPress={} color="#846434"></Button> */}
-            <StatusBar style="auto" />
+            {/* <StatusBar style="auto" /> */}
+        
         </View>
     );
   }
