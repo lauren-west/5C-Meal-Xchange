@@ -1,5 +1,9 @@
 import React from "react";
+import { StyleSheet } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome5';
+
+import { Text, View } from '../Themed';
+import styles from './meal-style'
 
 interface MealIconProps {
     description: string;
@@ -11,7 +15,9 @@ export default class MealIcon extends React.Component<MealIconProps> {
 
   render(){
       return(
-        <Icon name={this.props.description} size={30} color="#900" />
+        <View style={styles.getStartedContainer}>
+          <Icon name={this.props.description} size={30} color="rgba(10,200,255,0.8)"/>
+        </View>
       )
   }
 }

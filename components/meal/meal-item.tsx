@@ -19,8 +19,8 @@ export default class MealItem extends React.Component<{}> {
             <MealTitle title="Hamburger" />
             <MealIcon description="hamburger"/>
             <MealDescription description="Hamburger contain meat yum!" />
-            <MealButton text="Choose Hamburger" onPress={onPress} color="#900"></MealButton>
-            {/* <StatusBar style="auto" /> */}
+            <MealButton text="Choose Hamburger" onPress={onPress} ></MealButton>
+            <StatusBar style="auto" />
         </View>
     );
   }
