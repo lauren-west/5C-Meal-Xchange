@@ -2,7 +2,7 @@ import React from "react";
 
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Image } from "react-native";
-// import Button from "./button";
+import MealButton from "./meal-button";
 import MealDescription from "./meal-description";
 import MealIcon from "./meal-icon";
 import MealTitle from "./meal-title";
@@ -17,15 +17,17 @@ export default class MealItem extends React.Component<{}> {
     return (
         <View>
             <MealTitle title="Hamburger" />
-            <MealIcon description="check-square"/>
+            <MealIcon description="hamburger"/>
             <MealDescription description="Hamburger contain meat yum!" />
-            <MealWrittenReview/>
-            {/* <Button text="Submit Review" onPress={} color="#846434"></Button> */}
+            <MealButton text="Choose Hamburger" onPress={onPress} color="#900"></MealButton>
             {/* <StatusBar style="auto" /> */}
-        
         </View>
     );
   }
+}
+
+function onPress(){
+  console.log("Done Pressed!")
 }
 
 // <MealIcon description="coffee"/>

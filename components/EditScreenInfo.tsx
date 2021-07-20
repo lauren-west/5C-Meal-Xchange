@@ -25,8 +25,6 @@ export default function EditScreenInfo({ path }: { path: string }) {
           Start by picking your meal.
         </Text>
 
-        <MealItem/>
-
       </View>
       
       {/* <View style={styles.getStartedContainer}>

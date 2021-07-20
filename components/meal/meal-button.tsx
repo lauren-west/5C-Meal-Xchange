@@ -1,14 +1,14 @@
 import React from "react";
 import {Button as NativeButton} from "react-native";
 
-interface ButtonProps {
+interface MealButtonProps {
     text: string;
     onPress: () => void;
     color: string
     
 }
 
-export default class Button extends React.Component<ButtonProps>{
+export default class MealButton extends React.Component<MealButtonProps>{
     render(){
         return(
             <NativeButton 
