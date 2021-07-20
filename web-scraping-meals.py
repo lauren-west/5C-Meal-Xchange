@@ -13,30 +13,31 @@ soup = BeautifulSoup(reqs.content, 'html5lib')
 
 print(soup.prettify())
 
-quotes=[]  # a list to store quotes
+meals=[]  # a list to store meal items
 
-table = soup.find('aref', attrs = {'data-fooditemname':'all_quotes'})
+# this doesn't work yet #
+# table = soup.find('aref', attrs = {'data-fooditemname':'all_meals'})
 
 
-# See what's in one of the all_quotes!
-print(table.prettify())
+# See what's in one of the all_meals!
+# print(table.prettify())
 
 # for row in table.findAll('div', attrs={'class':'col-6 col-lg-3 text-center margin-30px-bottom sm-margin-30px-top'}):
-#     quote = {}
-#     quote['theme'] = row.h5.text
-#     quote['url'] = row.a['href']
-#     quote['img'] = row.img['src']
-#     quote['lines'] = row.img['alt'].split(" #")[0]
-#     quote['author'] = row.img['alt'].split(" #")[1]
-#     quotes.append(quote)
+#     meal = {}
+#     meal['theme'] = row.h5.text
+#     meal['url'] = row.a['href']
+#     meal['img'] = row.img['src']
+#     meal['lines'] = row.img['alt'].split(" #")[0]
+#     meal['author'] = row.img['alt'].split(" #")[1]
+#     meals.append(meal)
 
-# filename = 'inspirational_quotes.csv'
+# filename = 'inspirational_meals.csv'
 # with open(filename, 'w', newline='') as f:
 #     w = csv.DictWriter(f,['theme','url','img','lines','author'])
 #     w.writeheader()
-#     for quote in quotes:
-#         w.writerow(quote)
+#     for meal in meals:
+#         w.writerow(meal)
 
-# ## inspiration quote generator ##
-# rand_quote = quotes[random.randint(0,31)]['lines']
-# print(rand_quote)
+# ## inspiration meal generator ##
+# rand_meal = meals[random.randint(0,31)]['lines']
+# print(rand_meal)
